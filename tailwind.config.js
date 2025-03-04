@@ -5,11 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-      },
       colors: {
         grayCustom: '#ABABAB',
+        whiteMain:'#FAFFFA'
       },
       boxShadow: {
         'custom': '2px 15px 50px rgba(0, 0, 0, 0.5)',
