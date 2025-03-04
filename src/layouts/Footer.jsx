@@ -48,8 +48,9 @@ const Footer = () => {
                     {temperature}°C
                 </div>
             ) : (
-                <div className="text-lg flex font-normal px-8 text-gray-500">
+                <div className="text-lg flex font-normal px-8 gap-x-5 text-gray-500">
                     <ActualDate monthTypeDisplay={'numeric'}/>
+
                     <p>Ładowanie temperatury...</p>
                 </div>
             )}
