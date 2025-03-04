@@ -13,12 +13,12 @@ const HeaderMenu = () => {
                 {/* here wil be display by location */}
                 <p className="text-white">Home</p>
                 <div className="rounded-full bg-white w-[35px] h-[35px] flex justify-center items-center">
-                    <ArrowDown className = "" />
+                    <ArrowDown className = "" onClick={() => window.alert("Work in progress")} />
                 </div>
             </div>
             <div className="flex items-center justify-center bg-grayCustom rounded-full h-[50px] w-[50px]">
                 {/* here will be searching by words and letters */}
-                <SearchIcon />
+                <SearchIcon onClick={() => window.alert("Work in progress")}/>
             </div>
         </section>
     )
