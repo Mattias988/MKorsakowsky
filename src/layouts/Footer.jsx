@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ActualDate from "../components/ActualDate";
 
-const Footer = () => {
+export const Footer = () => {
     const [temperature, setTemperature] = useState(null);
     const [location, setLocation] = useState("Kraków");
 
@@ -58,4 +58,3 @@ const Footer = () => {
     );
 };
 
-export default Footer;
