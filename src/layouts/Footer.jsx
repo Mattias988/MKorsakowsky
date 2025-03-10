@@ -41,7 +41,7 @@ export const Footer = () => {
     }, []);
 
     return (
-        <footer className="w-full px-8 pb-6 flex justify-end items-center bg-transparent">
+        <footer className="fixed bottom-0 left-0 w-full px-8 pb-6 flex justify-end items-center bg-transparent">
             {temperature !== null ? (
                 <div className="text-lg flex gap-2 font-normal text-gray-700">
                     <ActualDate monthTypeDisplay={'numeric'}/>

@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import {Skills} from "./pages/Skills";
 import {Header} from "./layouts/Header";
 import {Footer} from "./layouts/Footer";
+import {Contact} from "./pages/Contact";
 
 function App() {
     return (
@@ -12,13 +13,16 @@ function App() {
                 <div className="absolute w-[400px] h-[400px] bg-[#ABABAB] rounded-full top-[-200px] right-[-200px] blur-[100px]" />
                 <div className="absolute w-[700px] h-[500px] bg-[#ABABAB] rounded-full blur-[100px] bottom-[-250px] left-[-250px]" />
             </div>
-            <div className="relative z-10 h-screen flex flex-col w-full bg-transparent">
+            <div className="relative z-10 h-full flex flex-col w-full bg-transparent">
                 <BrowserRouter>
                     <Header />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/skills" element={<Skills />} />
-                    </Routes>
+                    <main className="max-w-[1480px] h-fit w-full mx-auto flex-grow">
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/skills" element={<Skills />} />
+                            <Route path="/contact" element={<Contact />} />
+                        </Routes>
+                    </main>
                     <Footer />
                 </BrowserRouter>
             </div>

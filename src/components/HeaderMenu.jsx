@@ -15,10 +15,10 @@ const HeaderMenu = () => {
             <div className="flex items-center justify-center bg-grayCustom rounded-3xl h-[50px] w-[150px] gap-3">
                 <DropdownMenu />
             </div>
-            <div className="flex items-center justify-center bg-grayCustom rounded-full h-[50px] w-[50px]">
-                {/* here will be searching by words and letters */}
-                <SearchIcon onClick={() => window.alert("Work in progress")}/>
-            </div>
+            {/*<div className="flex items-center justify-center bg-grayCustom rounded-full h-[50px] w-[50px]">*/}
+            {/*    /!* here will be searching by words and letters *!/*/}
+            {/*    <SearchIcon onClick={() => window.alert("Work in progress")}/>*/}
+            {/*</div>*/}
         </section>
     )
 }
