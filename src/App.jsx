@@ -15,10 +15,12 @@ function App() {
             <div className="relative z-10 h-screen flex flex-col w-full bg-transparent">
                 <BrowserRouter>
                     <Header />
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/skills" element={<Skills />} />
-                    </Routes>
+                    <main className="max-w-[1480px] w-full mx-auto flex-grow">
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/skills" element={<Skills />} />
+                        </Routes>
+                    </main>
                     <Footer />
                 </BrowserRouter>
             </div>
