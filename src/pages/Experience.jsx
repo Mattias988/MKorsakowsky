@@ -5,7 +5,7 @@ const events2023 = [
     {
         date: "VII.2023 – IX.2023",
         title: "Prognosis Sp. z o.o. (Backend Developer Intern)",
-        expand: "Rozwiń",
+        expand: "Expand",
         technologies: [
             "Java",
             "Spring Boot",
@@ -20,20 +20,20 @@ const events2024 = [
     {
         date: "X.2023 – V.2024",
         title: "Prognosis Sp. z o.o. (Frontend Developer Intern)",
-        expand: "Rozwiń",
+        expand: "Expand",
         technologies: [
             "TypeScript",
             "React",
             "Tailwind CSS",
-            "HTML",
-            "CSS",
+            "HTML5",
+            "CSS3",
             "Git",
         ],
     },
     {
         date: "VII.2024",
         title: "Freelancer",
-        expand: "Rozwiń",
+        expand: "Expand",
         technologies: [
             "WordPress",
             "Elementor",
@@ -53,11 +53,11 @@ export const Experience = () => {
                     Experience
                 </header>
                 <span className="w-[10%] flex self-center border-b-2 border-black"></span>
-                <p className="text-gray-600 font-bold text-4lg w-full flex text-center pb-3">
+                <p className="text-gray-600 font-bold text-4lg w-5/6 flex self-center text-center pb-3">
                     Below, I present my professional journey that I have built over the years. Each role has enabled me to develop my skills, acquire valuable competencies, and broaden my industry knowledge. As a result, I am well-prepared for new challenges and eager to take on exciting projects.
                 </p>
                 <div className="w-full flex flex-col items-center mt-10">
-                    <div className="w-full flex items-start border-t-2 border-gray-300 relative h-24">
+                    <div className="w-3/4 flex items-start border-t-2 border-gray-300 relative h-24">
 
                         <div className="flex-1 text-center text-gray-600 text-lg font-medium">
                             2023
