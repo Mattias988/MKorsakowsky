@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom';
 import { Home } from './pages/Home';
 import {Skills} from "./pages/Skills";
 import {Header} from "./layouts/Header";
@@ -7,6 +7,8 @@ import {Footer} from "./layouts/Footer";
 import {Contact} from "./pages/Contact";
 
 function App() {
+    const location = useLocation();
+
     return (
         <div className="relative w-screen h-screen bg-whiteMain">
             <div className="fixed inset-0 z-0 pointer-events-none">
@@ -17,7 +19,7 @@ function App() {
                 <BrowserRouter>
                     <Header />
                     <main className="max-w-[1480px] h-fit w-full mx-auto flex-grow">
-                        <Routes>
+                        <Routes key={location.pathname}>
                             <Route path="/" element={<Home />} />
                             <Route path="/skills" element={<Skills />} />
                             <Route path="/contact" element={<Contact />} />
