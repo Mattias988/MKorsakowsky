@@ -5,6 +5,7 @@ import {Skills} from "./pages/Skills";
 import {Header} from "./layouts/Header";
 import {Footer} from "./layouts/Footer";
 import {Contact} from "./pages/Contact";
+import {Experience} from "./pages/Experience";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                             <Route path="/" element={<Home />} />
                             <Route path="/skills" element={<Skills />} />
                             <Route path="/contact" element={<Contact />} />
+                            <Route path="/experience" element={<Experience />} />
                         </Routes>
                     </main>
                     <Footer />
