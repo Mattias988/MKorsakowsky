@@ -5,7 +5,6 @@ import { ReactComponent as ArrowDown } from "../assets/icons/arrowDown.svg";
 export const DropdownMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
-    const [timeoutId, setTimeoutId] = useState(null);
 
     const pathMap = {
         "/": "Home",
@@ -18,31 +17,14 @@ export const DropdownMenu = () => {
 
     const filteredOptions = Object.entries(pathMap).filter(([path, name]) => name !== currentLocation);
 
-    const handleMouseEnter = () => {
-        if (timeoutId) clearTimeout(timeoutId);
-        setIsOpen(true);
-    };
-
-    const handleMouseLeave = () => {
-        const id = setTimeout(() => {
-            setIsOpen(false);
-        }, 500);
-        setTimeoutId(id);
-    };
-
-    useEffect(() => {
-        return () => clearTimeout(timeoutId);
-    }, [timeoutId]);
 
     return (
         <div
             className="relative inline-block"
-            onMouseEnter={() => handleMouseEnter()}
-            onMouseLeave={() => handleMouseLeave()}
         >
             <button className="flex items-center text-white px-4 py-2 gap-3 rounded-full">
                 {currentLocation}
-                <div className="rounded-full bg-white w-[35px] h-[35px] flex justify-center items-center">
+                <div onClick={() => setIsOpen(!isOpen)} className="rounded-full bg-white w-[35px] h-[35px] flex justify-center items-center">
                     <ArrowDown />
                 </div>
             </button>
