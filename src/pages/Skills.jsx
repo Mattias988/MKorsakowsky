@@ -4,6 +4,7 @@ import backendSkillImg from '../assets/images/backendCodeSkill.png'
 import databasesSkillImg from '../assets/images/databasesCodeSkill.png'
 import dockerSkillImg from '../assets/images/dockerCodeSkill.png'
 import {SkillComponent} from "../components/SkillComponent";
+import { motion } from "framer-motion";
 
 export const Skills = () => {
     const frontendDesc = "I have extensive experience in developing modern user interfaces using TypeScript and React. My expertise lies in building dynamic and responsive applications with React.js and Tailwind CSS, ensuring a seamless balance between aesthetics and usability. Additionally, I am highly proficient in HTML and CSS, allowing me to craft well-structured and visually appealing designs. I am also experienced in using Figma for UI/UX design, which enables me to create intuitive and user-friendly interfaces tailored to the needs of end users.";
@@ -14,13 +15,30 @@ export const Skills = () => {
     return (
         <div className="h-screen flex flex-col w-full bg-transparent items-center pt-5">
             <div className="flex flex-col gap-5">
-                <header className="w-full flex justify-center items-center mb-[-10px] font-semibold text-4xl">
-                    MY SKILLS
-                </header>
-                <span className="w-[10%] flex self-center border-b-2 border-black"></span>
-                <p className="text-gray-600 font-bold text-4lg flex justify-center pb-3">
-                    I really like experiment and invest my free time to extend my experience and knowledge about computer science, this is some of my area of interest ans skills
-                </p>
+                <motion.header
+                    initial={{ opacity: 0, y: -85 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.4  }}
+                >
+                    <header className="w-full flex justify-center items-center mb-[-10px] font-semibold text-4xl">
+                        MY SKILLS
+                    </header>
+                </motion.header>
+                <motion.div
+                    initial={{ opacity: 0, y: -85 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                    className="w-[10%] flex self-center border-b-2 border-black"
+                />
+                <motion.div
+                    initial={{ opacity: 0, y: -85 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut"}}
+                >
+                    <p className="text-gray-600 font-bold text-4lg flex justify-center pb-3">
+                        I really like experiment and invest my free time to extend my experience and knowledge about computer science, this is some of my area of interest ans skills
+                    </p>
+                </motion.div>
                 <SkillComponent title={"Frontend"} desc={frontendDesc} img={frontendSkillImg} reverse={false}/>
                 <SkillComponent title={"Backend"} desc={backendDesc} img={backendSkillImg} reverse={true}/>
                 <SkillComponent title={"Databases"} desc={databasesDesc} img={databasesSkillImg} reverse={false}/>
