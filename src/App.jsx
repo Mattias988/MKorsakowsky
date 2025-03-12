@@ -6,6 +6,7 @@ import { Header } from "./layouts/Header";
 import { Footer } from "./layouts/Footer";
 import { Contact } from "./pages/Contact";
 import { WeatherProvider } from './contexts/WeatherContext';
+import {Experience} from "./pages/Experience";
 
 function App() {
     return (
@@ -33,6 +34,7 @@ const MainLayout = () => {
                         <Route path="/" element={<Home />} />
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/experience" element={<Experience />} />
                     </Routes>
                 </main>
                 <Footer />
