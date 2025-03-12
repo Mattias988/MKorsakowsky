@@ -5,11 +5,14 @@ import { Skills } from "./pages/Skills";
 import { Header } from "./layouts/Header";
 import { Footer } from "./layouts/Footer";
 import { Contact } from "./pages/Contact";
+import { WeatherProvider } from './contexts/WeatherContext';
 
 function App() {
     return (
         <BrowserRouter>
-            <MainLayout />
+            <WeatherProvider>
+                <MainLayout />
+            </WeatherProvider>
         </BrowserRouter>
     );
 }
