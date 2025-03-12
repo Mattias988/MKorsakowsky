@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { Skills } from "./pages/Skills";
 import { Header } from "./layouts/Header";
@@ -7,7 +7,8 @@ import { Footer } from "./layouts/Footer";
 import { Contact } from "./pages/Contact";
 import { WeatherProvider } from './contexts/WeatherContext';
 import { Analytics } from '@vercel/analytics/react';
-import {Experience} from "./pages/Experience";
+import { Experience } from "./pages/Experience";
+import { motion } from "framer-motion";
 
 function App() {
     return (
@@ -21,13 +22,22 @@ function App() {
 }
 
 const MainLayout = () => {
-    const location = useLocation();
 
     return (
         <div className="relative w-screen h-screen bg-whiteMain">
             <div className="fixed inset-0 z-0 pointer-events-none">
-                <div className="absolute w-[400px] h-[400px] bg-[#ABABAB] rounded-full top-[-200px] right-[-200px] blur-[100px]" />
-                <div className="absolute w-[700px] h-[500px] bg-[#ABABAB] rounded-full blur-[100px] bottom-[-250px] left-[-250px]" />
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    className="absolute w-[400px] h-[400px] bg-[#ABABAB] rounded-full top-[] right-[-200px] blur-[100px]"
+                />
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    className="absolute w-[700px] h-[500px] bg-[#ABABAB] rounded-full blur-[100px] bottom-[-250px] left-[-250px]"
+                />
             </div>
             <div className="relative z-10 h-full flex flex-col w-full bg-transparent">
                 <Header />
