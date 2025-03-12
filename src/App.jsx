@@ -6,6 +6,7 @@ import { Header } from "./layouts/Header";
 import { Footer } from "./layouts/Footer";
 import { Contact } from "./pages/Contact";
 import { WeatherProvider } from './contexts/WeatherContext';
+import { Analytics } from '@vercel/analytics/react';
 import {Experience} from "./pages/Experience";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <BrowserRouter>
             <WeatherProvider>
                 <MainLayout />
+                <Analytics />
             </WeatherProvider>
         </BrowserRouter>
     );
