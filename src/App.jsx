@@ -13,8 +13,8 @@ function App() {
     return (
         <BrowserRouter>
             <WeatherProvider>
-                <MainLayout />
                 <Analytics />
+                <MainLayout />
             </WeatherProvider>
         </BrowserRouter>
     );
@@ -32,7 +32,7 @@ const MainLayout = () => {
             <div className="relative z-10 h-full flex flex-col w-full bg-transparent">
                 <Header />
                 <main className="max-w-[1480px] h-fit w-full mx-auto flex-grow">
-                    <Routes key={location.pathname}>
+                    <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/contact" element={<Contact />} />
@@ -40,6 +40,7 @@ const MainLayout = () => {
                     </Routes>
                 </main>
                 <Footer />
+                <Analytics />
             </div>
         </div>
     );
