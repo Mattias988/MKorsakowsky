@@ -30,7 +30,7 @@ export const DropdownMenu = () => {
             >
                 {currentLocation}
                 <div className="rounded-full bg-white w-[35px] h-[35px] flex justify-center items-center">
-                    <ArrowDown className={`${isOpen ? "rotate-180" : ""}`} />
+                    <ArrowDown className={`transition-transform duration-500 ease-in-out ${isOpen ? "rotate-180" : "rotate-0"}`}  />
                 </div>
             </button>
 
