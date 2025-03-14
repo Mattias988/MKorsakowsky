@@ -4,7 +4,7 @@ import ActualDate from "./ActualDate";
 const GreetingWithDate = () => {
 
     return (
-        <div className="flex items-center space-x-4 text-black">
+        <div className="flex flex-col justify-center sm:flex-row sm:items-center sm:space-x-4 text-black">
             <p className="text-lg font-medium">Good morning</p>
             <ActualDate monthTypeDisplay={'short'}/>
         </div>

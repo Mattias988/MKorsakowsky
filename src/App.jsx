@@ -41,7 +41,7 @@ const MainLayout = () => {
             </div>
             <div className="relative z-10 h-full flex flex-col w-full bg-transparent">
                 <Header />
-                <main className="max-w-[1480px] h-fit w-full mx-auto flex-grow">
+                <main className="max-w-[1480px] h-full w-full mx-auto flex-grow">
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/skills" element={<Skills />} />

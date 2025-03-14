@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const HeaderMenu = () => {
     return (
-        <section className="flex items-center justify-end gap-2">
+        <section className="flex flex-col sm:flex-row items-center justify-end gap-2">
             <Link to={"/"}>
                 <div className="flex items-center justify-center bg-grayCustom rounded-3xl w-[150px] h-[50px] gap-2 hover:bg-black transition ">
                     <HomeIcon />

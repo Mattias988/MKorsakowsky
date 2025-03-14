@@ -1,6 +1,6 @@
 export const InfoItem = ({ Icon, text, href }) => {
     return (
-        <li className="flex gap-4 items-center hover:bg-gray-100 p-2 rounded transition-all duration-300">
+        <li className="flex gap-4 items-center hover:bg-gray-200 p-2 rounded transition-all duration-300 ">
             <a
                 className="flex gap-4 items-center"
                 href={href}

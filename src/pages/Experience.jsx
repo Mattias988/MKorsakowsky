@@ -13,6 +13,8 @@ const events2023 = [
             "Hibernate",
             "PostgreSQL",
             "Git",
+            "IntelliJ",
+            "Postman"
         ],
     },
 ];
@@ -29,6 +31,8 @@ const events2024 = [
             "HTML5",
             "CSS3",
             "Git",
+            "WebStorm",
+            "Visual Studio Code"
         ],
     },
     {
@@ -55,7 +59,7 @@ export const Experience = () => {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.8, ease: "easeOut", delay: 0.4}}
                 >
-                    <header className="w-full flex justify-center items-center mb-[-10px] font-semibold text-4xl">
+                    <header className="w-full flex justify-center items-center mb-[-10px] font-semibold text-3xl sm:text-4xl">
                         Experience
                     </header>
                 </motion.header>
@@ -71,7 +75,7 @@ export const Experience = () => {
                     transition={{duration: 0.8, ease: "easeOut"}}
                     className="flex justify-center"
                 >
-                    <p className="text-gray-600 font-bold text-4lg text-center w-5/6 pb-3">
+                    <p className="text-gray-600 font-bold text-md sm:text-4lg text-center w-5/6 pb-3">
                         Below, I present my professional journey that I have built over the years. Each role has enabled
                         me to develop my skills, acquire valuable competencies, and broaden my industry knowledge. As a
                         result, I am well-prepared for new challenges and eager to take on exciting projects.
