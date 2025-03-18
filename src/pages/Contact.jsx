@@ -16,9 +16,9 @@ export const Contact = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
             >
-                <h1 className="text-3xl sm:text-4xl mb-3 font-bold text-gray-800 text-center">
+                <header className="text-xl sm:text-4xl font-bold mb-1 text-gray-800 text-center">
                     CONTACT ME
-                </h1>
+                </header>
             </motion.header>
             <motion.div
                 initial={{ opacity: 0, y: -85 }}
@@ -32,7 +32,7 @@ export const Contact = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex justify-center"
             >
-                <p className="text-gray-600 font-bold text-base sm:text-lg md:text-xl flex justify-center pb-10 mt-3 mx-4 text-center">
+                <p className="text-gray-600 w-full sm:w-2/3 font-semibold sm:font-bold text-sm scale-90 sm:mt-0 sm:text-4lg text-center py-3">
                     Want to discuss something or get in touch? The easiest way is to send me
                     an email!
                 </p>
@@ -49,7 +49,7 @@ export const Contact = () => {
                         <h2 className="text-xl sm:text-2xl font-semibold mb-4 text-gray-800">
                             INFO
                         </h2>
-                        <ul className="space-y-6">
+                        <ul className="space-y-1 sm:space-y-6">
                             <InfoItem Icon={LocationIcon} text="Kraków, Polska" href="https://www.google.com/maps/place/Kraków" />
                             <InfoItem Icon={LinkedinIcon} text="Maciej Korsakowski" href="https://www.linkedin.com/in/maciej-korsakowski-a65b0226a/" />
                             <InfoItem Icon={GithubIcon} text="Mattias988" href="https://github.com/Mattias988" />
