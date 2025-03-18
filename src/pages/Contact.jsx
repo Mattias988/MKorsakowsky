@@ -32,7 +32,7 @@ export const Contact = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="flex justify-center"
             >
-                <p className="text-gray-600 w-full sm:w-2/3 font-semibold sm:font-bold text-sm scale-90 sm:mt-0 sm:text-4lg text-center py-3">
+                <p className="text-gray-600 w-full sm:w-2/3 font-semibold sm:font-bold text-sm scale-90 sm:mt-0 sm:text-xl text-center py-3">
                     Want to discuss something or get in touch? The easiest way is to send me
                     an email!
                 </p>
