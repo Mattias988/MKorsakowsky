@@ -41,7 +41,7 @@ export const TimelineEvent = ({ event }) => {
                     >
                         {expanded ? "Roll up" : event.expand}
                     </button>
-s
+
                     <AnimatePresence>
                         {expanded && (
                             <motion.div
