@@ -39,9 +39,9 @@ export const TimelineEvent = ({ event }) => {
                         className="text-xs font-medium text-white bg-[#ABABAB] px-2 py-1 rounded-full hover:bg-[#909090] transition-all duration-300"
                         onClick={() => setExpanded(prev => !prev)}
                     >
-                        {expanded ? "Zwiń" : event.expand}
+                        {expanded ? "Roll up" : event.expand}
                     </button>
-
+s
                     <AnimatePresence>
                         {expanded && (
                             <motion.div
