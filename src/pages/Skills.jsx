@@ -61,7 +61,7 @@ export const Skills = () => {
                     transition={{duration: 0.8, ease: "easeOut"}}
                     className="flex justify-center"
                 >
-                    <p className="text-gray-600 w-full sm:w-2/3 font-semibold sm:font-bold text-xs scale-90 mt-[-16px] sm:mt-0 sm:text-xl text-center pb-3">
+                    <p className="text-gray-600 w-full sm:w-3/4 font-semibold sm:font-bold text-xs scale-90 mt-[-16px] sm:mt-0 sm:text-xl text-center pb-3">
                         I really like to experiment and invest my free time to extend my experience and knowledge about
                         computer science. This is some of my area of interest and skills.
                     </p>

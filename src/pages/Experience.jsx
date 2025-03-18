@@ -75,7 +75,7 @@ export const Experience = () => {
                     transition={{duration: 0.8, ease: "easeOut"}}
                     className="flex justify-center"
                 >
-                    <p className="text-gray-600 w-full sm:w-2/3 font-semibold sm:font-bold text-xs scale-90 mt-[-16px] sm:mt-0 sm:text-xl text-center pb-3">
+                    <p className="text-gray-600 w-full sm:w-3/4 font-semibold sm:font-bold text-xs scale-90 mt-[-16px] sm:mt-0 sm:text-xl text-center pb-3">
                         Below, I present my professional journey that I have built over the years. Each role has enabled
                         me to develop my skills, acquire valuable competencies, and broaden my industry knowledge. As a
                         result, I am well-prepared for new challenges and eager to take on exciting projects.
