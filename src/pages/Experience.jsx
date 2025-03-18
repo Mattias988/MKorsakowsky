@@ -75,7 +75,7 @@ export const Experience = () => {
                     transition={{duration: 0.8, ease: "easeOut"}}
                     className="flex justify-center"
                 >
-                    <p className="text-gray-600 w-full sm:w-2/3 font-semibold sm:font-bold text-sm scale-90 mt-[-12px] sm:mt-0 sm:text-4lg text-center pb-3">
+                    <p className="text-gray-600 w-full sm:w-2/3 font-semibold sm:font-bold text-xs scale-90 mt-[-16px] sm:mt-0 sm:text-4lg text-center pb-3">
                         Below, I present my professional journey that I have built over the years. Each role has enabled
                         me to develop my skills, acquire valuable competencies, and broaden my industry knowledge. As a
                         result, I am well-prepared for new challenges and eager to take on exciting projects.
@@ -86,10 +86,10 @@ export const Experience = () => {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 1, ease: "easeOut"}}
                 >
-                    <div className="w-full flex flex-col items-center mt-10">
-                        <div className="w-3/4 flex items-start border-t-2 border-gray-300 relative h-24">
+                    <div className="w-full flex flex-col items-center mt-4 sm:mt-10">
+                        <div className="w-full sm:w-3/4 flex items-start border-t-2 border-gray-300 relative h-24">
 
-                            <div className="flex-1 text-center text-gray-600 text-lg font-medium">
+                            <div className="flex-1 text-center text-gray-600 text-sm sm:text-lg font-medium">
                                 2023
                             </div>
 
@@ -97,7 +97,7 @@ export const Experience = () => {
                                 <TimelineEvent key={index} event={event}/>
                             ))}
 
-                            <div className="flex-1 text-center text-gray-600 text-lg font-medium">
+                            <div className="flex-1 text-center text-gray-600 text-sm sm:text-lg font-medium">
                                 2024
                             </div>
 
@@ -105,7 +105,7 @@ export const Experience = () => {
                                 <TimelineEvent key={index} event={event}/>
                             ))}
 
-                            <div className="flex-1 text-center text-gray-600 text-lg font-medium">
+                            <div className="flex-1 text-center text-gray-600 text-sm sm:text-lg font-medium">
                                 Present
                             </div>
                         </div>
