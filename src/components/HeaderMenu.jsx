@@ -1,24 +1,17 @@
 import {ReactComponent as HomeIcon} from "../assets/icons/homeIcon.svg"
-import {ReactComponent as SearchIcon} from "../assets/icons/searchIcon.svg"
-import {DropdownMenu} from "./DropdownMenu";
+ import {DropdownMenu} from "./DropdownMenu";
 import {Link} from "react-router-dom";
 
 const HeaderMenu = () => {
     return (
-        <section className="flex items-center justify-end gap-2">
-            <Link to={"/"}>
-                <div className="flex items-center justify-center bg-grayCustom rounded-3xl w-[150px] h-[50px] gap-2">
-                    <HomeIcon />
+        <section className="flex flex-col w-full h-full sm:flex-row items-end justify-center sm:justify-end gap-2">
+            <Link to={"/"} className="flex items-center justify-center bg-grayCustom rounded-3xl w-full h-full px-3 py-2 sm:w-[150px] sm:h-[50px] gap-2 hover:bg-black transition ">
+                    <HomeIcon className="scale-75 sm:scale-100"/>
                     <p className="text-white">Home</p>
-                </div>
             </Link>
-            <div className="flex items-center justify-center bg-grayCustom rounded-3xl h-[50px] w-[150px] gap-3">
-                <DropdownMenu />
+            <div className="flex items-center justify-center bg-grayCustom rounded-3xl w-full h-full sm:w-[150px] sm:h-[50px] hover:bg-black transition">
+                <DropdownMenu/>
             </div>
-            {/*<div className="flex items-center justify-center bg-grayCustom rounded-full h-[50px] w-[50px]">*/}
-            {/*    /!* here will be searching by words and letters *!/*/}
-            {/*    <SearchIcon onClick={() => window.alert("Work in progress")}/>*/}
-            {/*</div>*/}
         </section>
     )
 }
