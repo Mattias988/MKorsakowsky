@@ -9,8 +9,8 @@ export const SkillComponent = ({ title, desc, img, reverse }) => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="w-full md:w-[75%] bg-gray-100 rounded-3xl p-6"
             >
-                <h2 className="font-bold text-md sm:text-2xl text-gray-900">{title}</h2>
-                <p className="text-sm sm:text-md lg:text-lg text-gray-900">{desc}</p>
+                <h2 className="font-bold text-sm sm:text-md sm:text-2xl text-gray-900">{title}</h2>
+                <p className="text-xs sm:text-md lg:text-lg text-gray-900">{desc}</p>
             </motion.div>
 
             <motion.div
