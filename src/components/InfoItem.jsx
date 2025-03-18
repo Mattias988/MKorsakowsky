@@ -7,10 +7,10 @@ export const InfoItem = ({ Icon, text, href }) => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-        <span className="font-bold transition-transform duration-300 hover:scale-105">
+        <span className="font-bold scale-75 sm:scale-100 transition-transform duration-300 hover:scale-105">
           <Icon />
         </span>
-                <span className="text-gray-700">{text}</span>
+                <span className="text-gray-700 text-sm sm:text-md">{text}</span>
             </a>
         </li>
     );
