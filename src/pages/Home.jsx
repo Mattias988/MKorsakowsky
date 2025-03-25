@@ -28,7 +28,7 @@ export const Home = () => {
                     className="font-black text-xl sm:text-3xl md:text-4xl lg:text-5xl mt-4 text-primary"
                 >
                     I'm <Typewriter
-                    words={["fullstack developer.", "frontend developer.", "backend developer.", "freelancer.", "intern."]}
+                    words={["fullstack developer.", "frontend developer.", "backend developer.", "freelancer."]}
                     loop={0}
                     cursor
                     cursorStyle="|"
